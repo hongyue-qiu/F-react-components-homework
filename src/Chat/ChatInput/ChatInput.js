@@ -17,10 +17,9 @@ class ChatInput extends Component {
 
   handleClickOnSendMessage = () => {
     this.props.updateCustomMessage(this.state.customerMessage);
-    this.state = {
+    this.setState({
       customerMessage: '',
-    };
-    console.log(this.state.customerMessage);
+    });
   };
 
   render() {
